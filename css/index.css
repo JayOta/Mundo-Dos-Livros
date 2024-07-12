@@ -27,7 +27,7 @@
   transform: scale(1.1);
 }
 .navbar a.navbar-brand {
-  margin-left: 32rem;
+  /* margin-left: 32rem; */
   display: flex;
   font-size: 19px;
   color: #fff;
@@ -35,7 +35,7 @@
 }
 .navbar form.form {
   display: flex;
-  margin-right: 18em;
+  /* margin-right: 18em; */
 }
 .navbar form.form input.form-control {
   width: 450px;
@@ -84,8 +84,8 @@ button.search-btn:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  margin-left: 1rem;
-  margin-right: 3rem;
+  /* margin-left: 1rem;
+  margin-right: 3rem; */
   color: #4f759b;
   background-color: #fff;
   border: none;
