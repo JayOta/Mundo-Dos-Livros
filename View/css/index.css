@@ -6,7 +6,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.navbar {
+
+nav.navbar {
   background-color: #957f4f;
   height: 100px;
 }
@@ -35,7 +36,8 @@
 }
 .navbar form.form {
   display: flex;
-  /* margin-right: 18em; */
+  gap: 10px;
+  margin-left: 80px;
 }
 .navbar form.form input.form-control {
   width: 450px;
@@ -51,7 +53,7 @@
 button.search-btn {
   position: relative;
   width: 40px;
-  right: 48px;
+  right: 56px;
   border: none;
   color: #4f759b;
   background-color: transparent;
@@ -61,6 +63,11 @@ button.search-btn:hover {
   border: none;
   background-color: transparent;
   color: #4f759b;
+}
+.linkPart {
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
 }
 .navbar button.buy {
   width: 60px;
@@ -84,8 +91,6 @@ button.search-btn:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  /* margin-left: 1rem;
-  margin-right: 3rem; */
   color: #4f759b;
   background-color: #fff;
   border: none;
@@ -108,83 +113,103 @@ button.search-btn:hover {
   background-color: #4f759b;
   color: #fff;
 }
-#carouselExampleCaptions {
-  margin-top: 70px;
+#carouselExampleAutoplaying {
+  margin-top: 60px;
+  box-shadow: 0px 5px 10px #1e293b;
 }
-#carouselExampleCaptions img.carousel-img {
+#carouselExampleAutoplaying img.carousel-img {
   background-size: cover;
   backdrop-filter: blur(10px);
   opacity: 0.6;
   border-radius: 8px;
-  box-shadow: 0px 0px 4px #1e293b;
 }
 h3.categoria {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 30px;
   margin-bottom: 3rem;
 }
 .por-categoria {
   display: flex;
-  margin-left: 410px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.por-categoria .main-card {
+  display: flex;
   height: 250px;
   width: 380px;
-  background: #4f759b;
+  background: #000;
   color: #fff;
-  box-shadow: 0px 0px 3px #000;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
   text-align: center;
   transition: 0.3s ease-in;
 }
-.por-categoria:hover {
-  background: #41607f;
+.por-categoria .main-card img {
+  width: 379px;
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #0b0b0b;
+  transition: all 0.4s ease-in;
+  opacity: 0.9;
+}
+.por-categoria .main-card img:hover {
+  opacity: 0.5;
+}
+.por-categoria .main-card .carousel-caption {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .mini-cards {
   display: flex;
   flex-direction: row;
-  margin-left: 500px;
-  justify-content: space-around;
+  gap: 20px;
 }
+
 .mini-cards .column {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: 110px;
-  margin-left: 20px;
+  gap: 30px;
 }
-.column .mini-card-1 {
+.column .mini-card {
   box-shadow: 0px 0px 3px #000;
   height: 110px;
   width: 250px;
-  margin-bottom: 6px;
-  background: #4f759b;
+  background: #000;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: 0.3s ease-in;
 }
-.column .mini-card-1:hover {
-  background-color: #41607f;
-}
-.column .mini-card-2 {
-  box-shadow: 0px 0px 3px #000;
-  height: 110px;
+.por-categoria .mini-card img {
   width: 250px;
-  margin-top: 20px;
-  background: #4f759b;
-  color: #fff;
-  font-size: 25px;
-  display: flex;
+  height: 110px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #0b0b0b;
+  transition: all 0.4s ease-in;
+  opacity: 0.9;
+}
+.column .mini-card img:hover {
+  opacity: 0.5;
+}
+.por-categoria .mini-card .carousel-caption {
+  height: 10px;
+  min-width: 140px;
+  display: block;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-.column .mini-card-2:hover {
-  background-color: #41607f;
+  margin-bottom: 30px;
 }
 button.categoriaBtn {
   width: 25px;
@@ -192,15 +217,13 @@ button.categoriaBtn {
   border: none;
   box-shadow: 0px 0px 5px #000;
   border-radius: 4px;
-  background: #ccd7e2;
+  background: #957f4f;
   font-weight: bold;
   font-size: 20px;
-  position: relative;
-  right: 70px;
   transition: 0.3s ease-in;
 }
 button.categoriaBtn:hover {
-  background-color: #9fb6cd;
+  background-color: #786740;
 }
 h3.autores {
   display: flex;
@@ -221,6 +244,17 @@ h3.autores {
   background-color: #000;
   border-radius: 50%;
   cursor: pointer;
+}
+.alguns-autores a {
+  text-decoration: none;
+  list-style: none;
+}
+.alguns-autores p {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+  font-size: 18px;
+  color: #212529;
 }
 .alguns-autores img {
   width: 150px;
@@ -248,6 +282,13 @@ h3.lancamentos {
   height: 350px;
   cursor: pointer;
   background-color: #000;
+}
+.lancamentos .cards a {
+  text-decoration: none;
+  color: #212529;
+}
+.lancamentos .cards .card-body p.card-text {
+  font-size: 17px;
 }
 .lancamentos .cards img {
   width: fit-content auto;
