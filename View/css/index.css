@@ -114,8 +114,9 @@ button.search-btn:hover {
   color: #fff;
 }
 #carouselExampleAutoplaying {
-  margin-top: 60px;
+  margin-top: 55px;
   box-shadow: 0px 5px 10px #1e293b;
+  border-radius: 8px;
 }
 #carouselExampleAutoplaying img.carousel-img {
   background-size: cover;
