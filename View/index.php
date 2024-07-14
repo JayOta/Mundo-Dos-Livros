@@ -27,8 +27,8 @@
             <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
           </form>
           <div class="linkPart">
-            <button class="buy"><i class='bx bx-cart'></i></button>
-            <button class="login"><i class='bx bx-user'></i></button>
+            <button class="navBtns"><i class='bx bx-cart'></i></button>
+            <button class="navBtns"><i class='bx bx-user'></i></button>
         </div>
         </div>
       </nav>
@@ -177,17 +177,17 @@
       <!-- Lançamentos em Literatura -->
       <h3 class="lancamentos">Lançamentos em Literatura</h3>
       <br><br>
-      <div class="lancamentos">
-        <div class="card cards" aria-hidden="true" style="min-height: 384px;">
+      <div class="lancamentos-div">
+        <div class="card cards" aria-hidden="true">
           <a href="#">
             <img src="../View/img/book-1.jpg" class="card-img-top" alt="Foto do Livro">
             <div class="card-body">
               <h5 class="card-title">O Senhor dos Aneis - Parte 1</h5>
               <p class="card-text">R$ 95,00</p>
+            </div>
           </a>
         </div>
-        </div>
-        <div class="card cards" aria-hidden="true" style="min-height: 384px;">
+        <div class="card cards" aria-hidden="true">
           <a href="#">
             <img src="../View/img/book-2.jpg" class="card-img-top" alt="Foto do Livro">
             <div class="card-body">
@@ -196,7 +196,7 @@
             </div>
           </a>
         </div>
-        <div class="card cards" aria-hidden="true" style="min-height: 384px;">
+        <div class="card cards" aria-hidden="true">
           <a href="#">
             <img src="../View/img/book-3.jpg" class="card-img-top" alt="Foto do Livro">
             <div class="card-body">
@@ -205,7 +205,7 @@
             </div>
           </a>
         </div>
-        <div class="card cards" aria-hidden="true" style="min-height: 384px;">
+        <div class="card cards" aria-hidden="true">
           <a href="#">
             <img src="../View/img/book-4.jpg" class="card-img-top" alt="Foto do Livro">
             <div class="card-body">
@@ -214,8 +214,7 @@
             </div>
           </a>
         </div>
-
-        <div class="card cards" aria-hidden="true" style="min-height: 384px;">
+        <div class="card cards" aria-hidden="true">
           <a href="#">
             <img src="../View/img/book-5.jpg" class="card-img-top" alt="Foto do Livro">
             <div class="card-body">

@@ -42,6 +42,8 @@ nav.navbar {
 .navbar form.form input.form-control {
   width: 450px;
   height: 40px;
+  display: flex;
+  justify-content: center;
 }
 .navbar form.form input.form-control:active {
   outline: transparent;
@@ -69,7 +71,7 @@ button.search-btn:hover {
   gap: 30px;
   margin-right: 20px;
 }
-.navbar button.buy {
+.navbar button.navBtns {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -79,37 +81,15 @@ button.search-btn:hover {
   box-shadow: 0px 0px 6px #0b0b0b;
   transition: all 0.3s ease-in;
 }
-.navbar button.buy:hover {
+.navbar button.navBtns:hover {
   transform: scale(1.1);
 }
-.navbar button.buy i {
+.navbar button.navBtns i {
   font-size: 30px;
   display: flex;
   justify-content: center;
 }
-.navbar button.login {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  color: #4f759b;
-  background-color: #fff;
-  border: none;
-  box-shadow: 0px 0px 6px #0b0b0b;
-  transition: all 0.3s ease-in;
-}
-.navbar button.login:hover {
-  transform: scale(1.1);
-}
-.navbar button.login i {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-}
-.navbar button.buy:hover {
-  background-color: #4f759b;
-  color: #fff;
-}
-.navbar button.login:hover {
+.navbar button.navBtns:hover {
   background-color: #4f759b;
   color: #fff;
 }
@@ -158,21 +138,19 @@ h3.categoria {
   transition: all 0.4s ease-in;
   opacity: 0.9;
 }
+.por-categoria .main-card .carousel-caption {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 62px;
+}
 .por-categoria .main-card img:hover {
   opacity: 0.5;
-}
-.por-categoria .main-card .carousel-caption {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
 }
 .mini-cards {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
 .mini-cards .column {
   display: flex;
   flex-direction: column;
@@ -204,13 +182,18 @@ h3.categoria {
 .column .mini-card img:hover {
   opacity: 0.5;
 }
-.por-categoria .mini-card .carousel-caption {
-  height: 10px;
-  min-width: 140px;
-  display: block;
-  justify-content: center;
+.column .mini-card .carousel-caption {
+  display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  justify-content: center;
+  width: 150px;
+  margin-left: 7px;
+}
+.column .mini-card .carousel-caption h2 {
+  font-size: 30px;
+  width: 150px;
+  height: 25px;
+  z-index: 2;
 }
 button.categoriaBtn {
   width: 25px;
@@ -272,32 +255,34 @@ h3.lancamentos {
   justify-content: center;
   margin-top: 50px;
 }
-.lancamentos {
+.lancamentos-div {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
-.lancamentos .cards {
-  margin-left: 40px;
+.lancamentos-div .cards {
   width: 250px;
   height: 350px;
   cursor: pointer;
   background-color: #000;
 }
-.lancamentos .cards a {
+.lancamentos-div .cards img {
+  width: fit-content auto;
+  height: 347px;
+  box-shadow: 0px 0px 6px #0b0b0b;
+  transition: 0.3s ease-in;
+  border-radius: 5px;
+}
+.lancamentos-div .cards a {
   text-decoration: none;
   color: #212529;
 }
-.lancamentos .cards .card-body p.card-text {
+.lancamentos-div .cards .card-body p.card-text {
   font-size: 17px;
 }
-.lancamentos .cards img {
-  width: fit-content auto;
-  min-height: 382px;
-  box-shadow: 0px 0px 6px #0b0b0b;
-  transition: 0.3s ease-in;
-}
-.lancamentos .cards img:hover {
+
+.lancamentos-div .cards img:hover {
   opacity: 0.5;
 }
 footer {
@@ -314,4 +299,124 @@ footer {
   position: relative;
   bottom: 0;
   left: 0;
+}
+
+@media screen and (max-width: 1465px) {
+  /* Responsividade para o meu notebook */
+
+  nav.navbar {
+    height: 80px;
+  }
+  .navbar .logo {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .logo img {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar a.navbar-brand {
+    font-size: 16px;
+  }
+  .navbar form.form input.form-control {
+    width: 370px;
+    height: 32px;
+    font-size: 14px;
+  }
+  .navbar button.navBtns {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar button.navBtns i {
+    font-size: 26px;
+  }
+  h3.categoria {
+    font-size: 24px;
+  }
+  h3.autores {
+    font-size: 24px;
+  }
+  h3.lancamentos {
+    font-size: 24px;
+  }
+  #carouselExampleAutoplaying {
+    margin-top: 33px;
+  }
+  .carousel-item img.carousel-img {
+    width: 100%;
+    height: 470px;
+  }
+  .por-categoria .main-card {
+    width: 330px;
+    height: 220px;
+  }
+  .por-categoria .main-card img {
+    width: 330px;
+    height: 220px;
+  }
+  .por-categoria .mini-card {
+    width: 220px;
+    height: 95px;
+  }
+  .por-categoria .mini-card img {
+    width: 220px;
+    height: 95px;
+  }
+  button.categoriaBtn {
+    width: 20px;
+    height: 220px;
+  }
+  .por-categoria .main-card .carousel-caption {
+    position: absolute;
+    top: 4.6em;
+  }
+  .por-categoria .main-card .carousel-caption h2 {
+    font-size: 27px;
+  }
+  .por-categoria .mini-card .carousel-caption {
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+  }
+  .por-categoria .mini-card .carousel-caption h2 {
+    font-size: 23px;
+  }
+  .alguns-autores {
+    width: 120px;
+    height: 120px;
+  }
+  .alguns-autores img {
+    width: 120px;
+    height: 120px;
+  }
+  .alguns-autores p {
+    font-size: 15px;
+  }
+  .lancamentos-div .cards {
+    width: 200px;
+    height: 303px;
+  }
+  .lancamentos-div .cards img {
+    width: fit-content auto;
+    height: 300px;
+  }
+  .lancamentos-div .cards .card-body h5.card-title {
+    font-size: 17px;
+  }
+  .lancamentos-div .cards .card-body p.card-text {
+    font-size: 13px;
+  }
+  footer {
+    height: 130px;
+    font-size: 16px;
+  }
 }
